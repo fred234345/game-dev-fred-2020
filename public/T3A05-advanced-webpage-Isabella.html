@@ -1,0 +1,167 @@
+<head>
+<style>
+a {
+  color: red;
+  border: 3px dashed pink;
+  padding: 1px;
+  margin: 3px;
+  border-bottom-style: solid;
+  border-top-style: solid;
+}
+a:hover {
+  color: white;
+  background-color: pink;
+  border: 3px dotted red;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-bottom-size: 1px;
+}
+h2 {
+  color: blue;
+  font-family: courier;
+}
+input.mybuttoncat {
+  border-top-color: blue;
+  border-left-color: blue;
+  color: blue;
+  background-color: orange;
+}
+input.mybuttondog {
+  border-bottom-color: orange;
+  border-right-color: orange;
+  color: orange;
+  background-color: blue;
+}
+input.mybuttoncat:active {
+  border-top-color: yellow;
+  border-left-color: yellow;
+  border-bottom-color: purple;
+  border-right-color: purple;
+  color: purple;
+  background-color: yellow;
+}
+input.mybuttondog:active {
+  border-top-color: yellow;
+  border-left-color: yellow;
+  border-bottom-color: purple;
+  border-right-color: purple;
+  color: yellow;
+  background-color: purple;
+}
+table {
+  border: 3px dashed red;
+  border-collapse: collapse;
+  border-spacing: 5px;
+}
+img.myImg01 {
+  border: blue;
+  border-style: solid;
+  border-width: 2px;
+  border-left-width: 5px;
+  border-right-width: 5px;
+}
+img.myImg02 {
+  border: solid orange;
+  border-width: 2px;
+  border-bottom-width: 5px;
+  border-top-width: 5px;
+}
+body {
+  color: gray;
+}
+</style>
+</head>
+<body>
+<h2 align=center>T3A05 Advanced Web Pages By Isabella.html </h2>
+
+Links to >= 3 HTML CSS and Form resources such as:<br>
+<ol>
+  <li><a href="https://www.w3schools.com/html/html_css.asp">W3Schools CSS Reference</a><br>
+  <li><a href="https://www.w3schools.com/TAGS/default.ASP">W3Schools HTML Reference</a><br>
+  <li><a href="https://www.w3schools.com/html/html_forms.asp">W3Schools Forms Reference</a><br>
+  <li><a href="https://www.w3schools.com/tags/tag_form.asp">W3Schools Forms Tag</a><br>  
+  <li><a href="https://www.w3schools.com/tags/tag_style.asp">W3Schools Style Tag</a><br>
+  <li><a href="https://www.w3schools.com/css/">W3Schools CSS Tutorial</a><br>
+  <li><a href="https://www.w3schools.com/html/">W3Schools HTML Tutorial</a><br>  
+  <li><a href="https://www.w3schools.com/howto/howto_css_register_form.asp">W3Schools Form How To</a><br>
+  <li><a href="https://www.w3schools.com/tags/tag_link.asp">W3Schools How To Link To Stylesheet</a><br>
+</ol>
+<hr>
+<form name="myFormName" id="myFormId" method="GET" action="aURL.com">
+First Name: <input type="text" value="Isabella" placeholder="First Name"><br>
+Gender: Boy<input type="radio" name="boy">   Girl<input type="radio" name="girl">   Other (specify) <input type="text" value="Other" placeholder="Gender"><br>
+AC/DC: <input type="checkbox" value="band"><br>
+Password: <input id="myPass" input type="password"><br>
+Button: <input type="button" onclick="{
+  alert('Your Password is: ' + document.getElementById('myPass').value)
+}"><br>
+
+<textarea rows=4 cols=70 wrap>
+I can write text here
+</textarea><br>
+
+<select size=2>
+  <option value='A'>Eh
+  <option value='B'>Bee
+  <option value='C'>Sea
+</select><br>
+
+Cats or Dogs?    Cats<input type="range" min="0" max="100">Dogs<br>
+Favourite Colour: <input type="color" name="favouritecolour"><br>
+Favourite Day: <input type="date" name="favourite day"><br>
+Email: <input type="email"><br>
+Best Picture of Chocobos: <input type="file"><br>
+What Month was <i style="color:darkgreen";>Final Fantasy 7 Remake</i> Set to Release in Originally: <input type="month"><br>
+How Many Chickens Do You Own: <input type="number" id="myChickenId" name="number of chickens" min="0" onmousemove="{
+  if ((document.getElementById('myChickenId').value < 0))
+    document.getElementById('myChickenId').value=0
+}"><br>
+What Week is it: <input type="week"><br>
+What Time Did You Fill Out This Form: <input type="time"><br>
+
+
+
+
+<br>
+<input type="submit"><input type="reset">
+</form>
+
+<hr>
+
+<iframe src="https://www.animaljam.com/en/welcome" width="90%" height="300px"></iframe><br>
+<hr>
+<br>
+This is 
+<b style="color:red; background-color:yellow;">bold</b> this isn't.<br>
+
+<input type="button" value="move cat" class="mybuttoncat" onclick="{
+  document.getElementById('myImg01').style.left =
+    parseInt(document.getElementById('myImg01').style.left) + 15
+}">
+<input type="button" value="move dog" class="mybuttondog" onclick="{
+  document.getElementById('myImg02').style.left =
+    parseInt(document.getElementById('myImg02').style.left) + 10
+}"><br>
+<img id="myImg01" class="myImg01" width="100" src="https://d17fnq9dkz9hgj.cloudfront.net/uploads/2012/11/153558006-tips-healthy-cat-632x475.jpg" 
+style="position:relative; left:0; top:0"><br>
+
+<img id="myImg02" class="myImg02" width="100" src="https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg?w=1155&h=1541" 
+style="position:relative; left:0; top:0"><br>
+</style>
+
+<table>
+  <tr>
+    <th>fur</th>
+    <th>scale</th>
+  </tr>
+  <tr>
+    <td>cat</td>
+    <td>snake</td>
+  </tr>
+  <tr>
+    <td>dog</td>
+    <td>fish</td>
+  </tr>
+</table>
+Get <style opacity: 0.5;> 8</style> different CSS things working<br>
+</body>
