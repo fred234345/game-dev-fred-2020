@@ -1,0 +1,29 @@
+<h1 align=center>T3A08-loops-Isabella</h1>
+
+<input id="myText01" type="text" value="5">
+
+<input type="button" value="Loop" onclick="{
+  document.getElementById('myDiv01').innerHTML =''
+
+  for (let myX=0; myX<=document.getElementById('myText01').value; myX++){
+
+  document.getElementById('myDiv01').innerHTML +='<br>Loop #:' + myX
+  if (myX == 3){
+    document.getElementById('myDiv01').innerHTML += ', Wow a Three'
+   }
+  else if (myX == 5){
+    document.getElementById('myDiv01').innerHTML += ', Wow a Five'
+   }
+  else if (myX == 8){
+    document.getElementById('myDiv01').innerHTML += ', Wow an Eight'
+   }
+  if (myX >= 9){
+    document.getElementById('myDiv01').innerHTML += ' Greater than or Equal to 9'
+  }
+  if(myX % 2 != 0){
+     
+  }
+}
+}">
+
+<div id="myDiv01">...</div>
