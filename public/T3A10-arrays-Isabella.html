@@ -1,0 +1,44 @@
+<script>
+let myArray = new Array(20)
+myArray[0] = 'John'
+myArray[1] = ' Fred'
+myArray[2] = ' Mary'
+myArray[3] = ' Jack'
+myArray[4] = ' Bob'
+myArray[5] = ' Jerry'
+myArray[6] = ' Ben'
+myArray[7] = ' Linda'
+myArray[8] = ' Bell'
+myArray[9] = ' Ash'
+myArray[10] = ' Felix'
+myArray[11] = ' Lillie'
+myArray[12] = ' Jessie'
+myArray[13] = ' James'
+myArray[14] = ' Serena'
+myArray[15] = ' Zack'
+myArray[16] = ' Barret'
+myArray[17] = ' May'
+myArray[18] = ' Hilda'
+myArray[19] = ' Ethan'
+myArray[20] = ' Barry'
+</script>
+
+<h1 align=center>T3A10-Arrays-Isabella.html</h1>
+
+<input id="myText01" type=text value="Fred"><br>
+<input id="myText02" type=text value="Mary"><br>
+<input id="myText03" type=text value="Jack"><br>
+
+<input type="button" value="Array Set" onclick="{
+
+  document.getElementById('myDiv01').innerHTML = '<br>myText01 = '+ document.getElementById('myText01').value
+
+}">
+
+<input type="button" value="Array Show" onclick="{
+
+  document.getElementById('myDiv01').innerHTML = myArray
+
+}"><br>
+
+<div id="myDiv01">...</div>
