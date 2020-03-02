@@ -1,0 +1,64 @@
+<h1 align=center>T3A11-objects-Isabella.html</h1>
+
+<h4>Name: </h4><div id="myDiv01">...</div><br>
+<h4>Age: </h4><div id="myDiv02">...</div><br>
+<h4>Appearance: </h4><div id="myDiv03">...</div>
+
+<script>
+var myobject = {
+  firstName: "Prompto", 
+  lastName: "Argentum", 
+  Age: "20", 
+  eyeColour: "blue", 
+  hairColour: "blond"
+};
+
+
+document.getElementById("myDiv01").innerHTML = myobject["firstName"] + " " + myobject["lastName"];
+document.getElementById("myDiv02").innerHTML = myobject["Age"];
+document.getElementById("myDiv03").innerHTML = myobject["eyeColour"] + " eyes, " + myobject["hairColour"] + ' hair';
+</script><br><br>
+
+<input id="myText01" type="text" value="fred">
+<input id="myText02" type="text" value="fred">
+<input id="myText03" type="text" value="fred">
+
+<input type="button" value="Show Object" onclick="{
+
+myObject02 = {
+  'myName' : document.getElementById('myText01').value,
+  'myHairColor' : document.getElementById('myText02').value,
+  'myNumber' : document.getElementById('myText03').value,
+}
+
+
+  document.getElementById('myDiv04').innerHTML = ' name : ' + myObject02.myName
+  document.getElementById('myDiv05').innerHTML = ' hair colour : ' + myObject02.myHairColor
+  document.getElementById('myDiv06').innerHTML = ' age : ' + myObject02.myNumber
+}">
+
+
+
+<h4>Name: </h4><div id="myDiv04">...</div>
+<h4>Hair Colour: </h4><div id="myDiv05">...</div>
+<h4>Age: </h4><div id="myDiv06">...</div>
+
+
+<br><br>
+<script>
+
+var myAr = new Array(2)
+  myAr[0] = "myObject01",
+  myAr[1] = "myObject02",
+  myAr[2] = "Freckles : True";
+var myObject03 = {
+  Array01 = [1, 2], 
+  Array02 = [3, 4],
+}
+
+document.getElementById('myDiv07').innerHTML = myObject03.Array01 + myObject03.Array02
+document.getElementById('myDiv08').innerHTML = myAr
+</script>
+<div id="myDiv07">...</div>
+<div id="myDiv08">...</div>
+
