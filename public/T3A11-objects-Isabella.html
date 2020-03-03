@@ -20,8 +20,8 @@ document.getElementById("myDiv03").innerHTML = myobject["eyeColour"] + " eyes, "
 </script><br><br>
 
 <input id="myText01" type="text" value="fred">
-<input id="myText02" type="text" value="fred">
-<input id="myText03" type="text" value="fred">
+<input id="myText02" type="text" value="brown">
+<input id="myText03" type="text" value="18">
 
 <input type="button" value="Show Object" onclick="{
 
@@ -47,17 +47,17 @@ myObject02 = {
 <br><br>
 <script>
 
-var myAr = new Array(2)
-  myAr[0] = "myObject01",
-  myAr[1] = "myObject02",
-  myAr[2] = "Freckles : True";
-var myObject03 = {
-  Array01 = [1, 2], 
-  Array02 = [3, 4],
+let myArrayofObjects = [{x:30, y:20},
+  {'name':'Tristan', 'lastname':'Ellison'},
+  {'eyeColour':'Blue', 'hairColour':'Orange'}
+]
+let myObject03 = {
+  'x' : [1, 2]', 
+  'y' : [3, 4]',
 }
 
-document.getElementById('myDiv07').innerHTML = myObject03.Array01 + myObject03.Array02
-document.getElementById('myDiv08').innerHTML = myAr
+document.getElementById("myDiv07").innerHTML = myObject03.x[1]
+document.getElementById("myDiv08").innerHTML = myArrayofObjects[2].eyeColour;
 </script>
 <div id="myDiv07">...</div>
 <div id="myDiv08">...</div>
