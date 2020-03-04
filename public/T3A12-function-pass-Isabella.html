@@ -1,16 +1,17 @@
 <script>
-  function myFun(myVar){
-   document.getElementById('myDiv01').innerHTML = 'Fred ' + myVar + ' ' + document.getElementById('myText01').value
+  function myFun(myVar, myVar01, myVar02){
+   document.getElementById('myDiv01').innerHTML = myVar01 + ' ' + myVar + ' ' + myVar02
 }
 </script>
 
 <h2 align=center>T3A12-function-pass-Isabella.html</h2>
 
-
-Say a Greeting: <input id="myText01" type=text value="how are you?">
+Input a Name: <input id="myText02" type=text value="Fred">
+Say a Greeting: <input id="myText01" type=text value="Good Evening,">
+  <input id="myText03" type=text value="How are you?">
 <input type="button" value="Say hi" onclick="{
 
- myFun('hello')
+ myFun(document.getElementById('myText01').value, document.getElementById('myText02').value, document.getElementById('myText03').value)
 
 }">
 <br>
