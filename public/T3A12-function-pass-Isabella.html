@@ -1,0 +1,18 @@
+<script>
+  function myFun(myVar){
+   document.getElementById('myDiv01').innerHTML = 'Fred ' + myVar + ' ' + document.getElementById('myText01').value
+}
+</script>
+
+<h2 align=center>T3A12-function-pass-Isabella.html</h2>
+
+
+Say a Greeting: <input id="myText01" type=text value="how are you?">
+<input type="button" value="Say hi" onclick="{
+
+ myFun('hello')
+
+}">
+<br>
+
+<div id="myDiv01"></div>
