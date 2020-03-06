@@ -1,0 +1,23 @@
+<body; onkeydown="{
+  document.all.myText01.value = event.key
+
+  if(event.key == 'd') {   // d = go right
+    document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left + 10 + 'px'
+  }
+  if(event.key == 's') {   // s = go down
+    document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 10 + 'px'
+  }
+  if(event.key == 'a') {   // a = go left
+    document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 10 + 'px'
+  }
+  if(event.key == 'w') {   // w = go up
+    document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+  }
+}">
+
+
+<h2 align=center>T3A14-WASD-onKeyDown-Isabella.html</h2>
+
+<input id="myText01" type="text" value="0" size="6"><br>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/66/An_up-close_picture_of_a_curious_male_domestic_shorthair_tabby_cat.jpg" id="myImage01" style="position:relative; z-index:-1; left:0px; top:0px; height:100px; width:100px;">
