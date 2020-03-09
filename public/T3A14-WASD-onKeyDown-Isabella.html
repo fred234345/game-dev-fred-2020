@@ -2,16 +2,16 @@
   document.all.myText01.value = event.key
 
   if(event.key == 'd') {   // d = go right
-    document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left + 10 + 'px'
+    document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'
   }
   if(event.key == 's') {   // s = go down
-    document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 10 + 'px'
+    document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
   }
   if(event.key == 'a') {   // a = go left
     document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 10 + 'px'
   }
   if(event.key == 'w') {   // w = go up
-    document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+    document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 10 + 'px'
   }
 }">
 
