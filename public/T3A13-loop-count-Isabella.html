@@ -1,0 +1,26 @@
+<h2 align=center>T3A13-loop-count-Isabella.html</h2>
+
+
+<input id="myText01" type="text" value="10">
+
+<input type="button" value="Increasing count" onclick="{
+  document.getElementById('myDiv01').innerHTML =''
+
+  for (let myX=0; myX<=document.getElementById('myText01').value; myX++){
+  document.getElementById('myDiv01').innerHTML += myX
+  if (myX == 1){
+    document.getElementById('myDiv01').innerHTML + '<br>'
+   }
+  else if (myX == 2){
+    document.getElementById('myDiv01').innerHTML + '<br><br>' 
+   }
+  else if (myX == 3){
+    document.getElementById('myDiv01').innerHTML + '<br><br><br>'
+   }
+  if (myX == 5){
+    document.getElementById('myDiv01').innerHTML + '<br>'
+  }
+    }
+}">
+
+<div id="myDiv01">...</div>
